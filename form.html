@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <form autocomplete="off" spellcheck="false" class="my-form">
+
+        <div class="colum">
+            <div class="basic-info">
+                <input type="file" accept=".png, .jpeg, .jpg" id="avata" hidden>
+                <label for="avata">
+                    <img src="./src/img/img-avatar-placeholder.webp" alt="avatar" class="avatar">
+                </label>
+                <div class="name-info">
+                    <div>
+                        <label>
+                            <b>First Name</b>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <b>Last Name</b>
+                            <input type="text">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <label>
+                <b>Email</b>
+                <input type="text">
+            </label>
+            <label>
+                <b>Password</b>
+                <input type="password">
+            </label>
+            <label>
+                <b>Confirm Password</b>
+                <input type="password">
+            </label>
+            <label>
+                <b>Phone numbers</b>
+                <input type="tel">
+            </label>
+            <label>
+                <b>Address</b>
+                <input type="text"></input>
+            </label>
+        </div>
+
+        <div class="colum">
+            <div class="row">
+                <div>
+                    <div>
+                        <label for="gender"><b>Gender</b></label>
+
+                    </div>
+                    <select name="gender" id="gender">
+                        <option value="volvo">Male</option>
+                        <option value="saab">Female</option>
+                        <option value="mercedes">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>
+                        <b>Date of Birth</b>
+                    </label>
+
+                    <div><input type="date"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div>
+                        <label for="country"><b>Country</b></label>
+
+                    </div>
+                    <select name="country" id="country">
+                        <option value="volvo">Việt Nam</option>
+                        <option value="saab">US</option>
+                        <option value="mercedes">Japan</option>
+                        <option value="mercedes">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="language"><b>Language</b></label>
+
+                    </div>
+                    <select name="language" id="language">
+                        <option value="volvo">Tiếng việt</option>
+                        <option value="saab">English</option>
+                    </select>
+                </div>
+            </div>
+
+            <label class="communication-preferences">
+                <b>Communication Preferences</b>
+            </label>
+            <ul>
+                <li>
+                    <label class="center-label">
+                        <input type="checkbox" name="communication-preferences">
+                        Subscribe to Newsletter
+                    </label>
+                </li>
+                <li>
+                    <label class="center-label">
+                        <input type="checkbox" name="communication-preferences">
+                        Receive Promotional Emails
+                    </label>
+                </li>
+                <li>
+                    <label class="center-label">
+                        <input type="checkbox" name="communication-preferences">
+                        Get Product Updates
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-container">
+                <button class="btn register-btn">Register</button>
+                <button class="btn cancel-btn">Cancel</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </form>
+</body>
+
+</html>
